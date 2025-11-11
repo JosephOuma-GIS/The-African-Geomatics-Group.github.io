@@ -21,7 +21,222 @@
             </ul>
         </div>
     </nav>
+<!-- Services & Courses Section -->
+<section id="services" style="padding: 5rem 0; background: #f8f9fa;">
+    <div class="container">
+        <h2 class="section-title">Services & Professional Training</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; color: #4a5568;">
+            Expert GIS consulting services and comprehensive training programs to advance your geospatial capabilities
+        </p>
 
+        <!-- Consulting Services -->
+        <div class="services-category">
+            <h3 style="text-align: center; color: #2c5530; margin-bottom: 2rem; font-size: 1.8rem;">Consulting Services</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>Remote Sensing Analysis</h3>
+                    <p>Advanced satellite imagery processing, land cover classification, and environmental monitoring using cutting-edge algorithms and machine learning.</p>
+                    <div class="service-features">
+                        <span>Satellite Data Processing</span>
+                        <span>Change Detection</span>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Custom Web GIS Solutions</h3>
+                    <p>Interactive mapping applications and spatial data dashboards tailored to your specific organizational needs and workflows.</p>
+                    <div class="service-features">
+                        <span>Interactive Maps</span>
+                        <span>Real-time Data</span>
+                        <span>Custom Dashboards</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Spatial Data Analytics</h3>
+                    <p>Advanced spatial statistics, hotspot analysis, and predictive modeling for data-driven decision making and strategic planning.</p>
+                    <div class="service-features">
+                        <span>Spatial Statistics</span>
+                        <span>Predictive Modeling</span>
+                        <span>Hotspot Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Courses -->
+        <div class="courses-category" style="margin-top: 4rem;">
+            <h3 style="text-align: center; color: #2c5530; margin-bottom: 2rem; font-size: 1.8rem;">Professional GIS Courses</h3>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1rem; color: #4a5568;">
+                Hands-on training programs designed by industry experts to build practical skills and advance careers in geospatial technology
+            </p>
+            
+            <div class="courses-grid">
+                <!-- QGIS Course -->
+                <div class="course-box">
+                    <div class="course-header qgis-course">
+                        <div class="course-badge">Beginner to Advanced</div>
+                        <h3>Hands on With QGIS</h3>
+                        <p>Master Open-Source GIS Platform</p>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-description">
+                            <p>Comprehensive training in QGIS, the world's leading open-source GIS software. From fundamental concepts to advanced spatial analysis techniques used by professionals.</p>
+                        </div>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>6 Weeks | 24 Hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>GIS Analysts | Students</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tools"></i>
+                                <span>QGIS 3.x | Plugins</span>
+                            </div>
+                        </div>
+                        <div class="learning-outcomes">
+                            <h4>Key Learning Outcomes:</h4>
+                            <ul>
+                                <li>Advanced spatial analysis and data management</li>
+                                <li>Professional map design and cartography</li>
+                                <li>Automation with Processing Toolbox</li>
+                                <li>3D visualization and web mapping</li>
+                            </ul>
+                        </div>
+                        <button class="course-btn" onclick="enrollCourse('Hands on With QGIS')">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Google Earth Engine Course -->
+                <div class="course-box">
+                    <div class="course-header gee-course">
+                        <div class="course-badge">Most Popular</div>
+                        <h3>Google Earth Engine: Basics to Advanced</h3>
+                        <p>Cloud Computing for Geospatial Analysis</p>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-description">
+                            <p>Harness the power of Google's cloud computing platform for petabyte-scale geospatial analysis. Learn to process satellite imagery and build automated analysis pipelines.</p>
+                        </div>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>8 Weeks | 32 Hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Researchers | Developers</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tools"></i>
+                                <span>JavaScript | API</span>
+                            </div>
+                        </div>
+                        <div class="learning-outcomes">
+                            <h4>Key Learning Outcomes:</h4>
+                            <ul>
+                                <li>Process satellite imagery at scale</li>
+                                <li>Implement machine learning algorithms</li>
+                                <li>Build time-series analysis applications</li>
+                                <li>Develop custom Earth Engine applications</li>
+                            </ul>
+                        </div>
+                        <button class="course-btn" onclick="enrollCourse('Google Earth Engine: Basics to Advanced')">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- ArcGIS Pro Course -->
+                <div class="course-box">
+                    <div class="course-header arcpro-course">
+                        <div class="course-badge">Industry Standard</div>
+                        <h3>Data Analysis & Visualization in ArcPro</h3>
+                        <p>Enterprise GIS Solutions</p>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-description">
+                            <p>Master Esri's flagship software for professional GIS workflows. Learn advanced data analysis, 3D visualization, and enterprise-level spatial data management.</p>
+                        </div>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>5 Weeks | 20 Hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Professionals | Analysts</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tools"></i>
+                                <span>ArcPro | Model Builder</span>
+                            </div>
+                        </div>
+                        <div class="learning-outcomes">
+                            <h4>Key Learning Outcomes:</h4>
+                            <ul>
+                                <li>Advanced geoprocessing and analysis</li>
+                                <li>3D visualization and scene creation</li>
+                                <li>Dashboard and story map development</li>
+                                <li>Enterprise data management</li>
+                            </ul>
+                        </div>
+                        <button class="course-btn" onclick="enrollCourse('Data Analysis & Visualization in ArcPro')">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- GIS Programming Course -->
+                <div class="course-box">
+                    <div class="course-header programming-course">
+                        <div class="course-badge">Advanced Level</div>
+                        <h3>GIS Programming & Automation</h3>
+                        <p>Custom Solutions Development</p>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-description">
+                            <p>Learn to automate GIS workflows and develop custom geospatial applications using Python, APIs, and web technologies. Build scalable solutions for complex spatial problems.</p>
+                        </div>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>7 Weeks | 28 Hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Developers | Analysts</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tools"></i>
+                                <span>Python | APIs | Web GIS</span>
+                            </div>
+                        </div>
+                        <div class="learning-outcomes">
+                            <h4>Key Learning Outcomes:</h4>
+                            <ul>
+                                <li>Python scripting for GIS automation</li>
+                                <li>Web GIS application development</li>
+                                <li>REST API integration</li>
+                                <li>Custom tool and plugin creation</li>
+                            </ul>
+                        </div>
+                        <button class="course-btn" onclick="enrollCourse('GIS Programming & Automation')">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
@@ -315,80 +530,4 @@
                 </div>
             </div>
             
-</section> <!-- This closes the previous section -->
-            <!-- Course 3: ArcGIS Pro -->
-            <div class="course-card">
-                <div class="course-image arcpro-theme">
-                    <div class="course-overlay">
-                        <span class="course-tag">Industry Standard</span>
-                    </div>
-                </div>
-                <div class="course-content">
-                    <h3>Data Analysis & Visualization in ArcPro</h3>
-                    <p>Professional training in Esri's flagship software for enterprise-level spatial data management and visualization.</p>
-                    <div class="course-features">
-                        <div class="feature">
-                            <i class="fas fa-clock"></i>
-                            <span>5 Weeks</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-chart-bar"></i>
-                            <span>Data Viz</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-certificate"></i>
-                            <span>Certificate</span>
-                        </div>
-                    </div>
-                    <div class="course-topics">
-                        <h4>What You'll Learn:</h4>
-                        <ul>
-                            <li>ArcPro Interface & Tools</li>
-                            <li>Advanced Spatial Analysis</li>
-                            <li>3D Visualization</li>
-                            <li>Dashboard Creation</li>
-                        </ul>
-                    </div>
-                    <button class="enroll-btn">Enroll Now</button>
-                </div>
-            </div>
 
-            <!-- Course 4: GIS Programming -->
-            <div class="course-card">
-                <div class="course-image programming-theme">
-                    <div class="course-overlay">
-                        <span class="course-tag">Advanced</span>
-                    </div>
-                </div>
-                <div class="course-content">
-                    <h3>GIS Programming & Automation</h3>
-                    <p>Learn to automate GIS workflows and develop custom geospatial applications using Python and web technologies.</p>
-                    <div class="course-features">
-                        <div class="feature">
-                            <i class="fas fa-clock"></i>
-                            <span>7 Weeks</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-code"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-certificate"></i>
-                            <span>Certificate</span>
-                        </div>
-                    </div>
-                    <div class="course-topics">
-                        <h4>What You'll Learn:</h4>
-                        <ul>
-                            <li>Python for GIS (ArcPy, GDAL)</li>
-                            <li>Web GIS Development</li>
-                            <li>API Integration</li>
-                            <li>Script Automation</li>
-                        </ul>
-                    </div>
-                    <button class="enroll-btn">Enroll Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
