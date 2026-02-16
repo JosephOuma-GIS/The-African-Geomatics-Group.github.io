@@ -1,1 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://the-african-geomatics-group.github.io/</loc>
+        <lastmod>2025-02-16</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://the-african-geomatics-group.github.io/#about</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://the-african-geomatics-group.github.io/#services</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://the-african-geomatics-group.github.io/#projects</loc>
+        <priority>0.8</priority>
+    </url>
+</urlset>
+```
 
+### 5. **Create a `robots.txt`**
+
+Add this to your repository root:
+```
+User-agent: *
+Allow: /
+Sitemap: https://the-african-geomatics-group.github.io/sitemap.xml
