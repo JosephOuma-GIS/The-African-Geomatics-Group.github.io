@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The African Geomatics Group | Geospatial Intelligence & Consulting</title>
+    <link rel="icon" type="image/jpeg" href="agg-logo.jpg">
     <style>
         * {
             margin: 0;
@@ -57,7 +58,7 @@
         .logo-nav {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem 2rem;
+            padding: 1.5rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -69,6 +70,17 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+        }
+
+        .logo img {
+            max-height: 80px;
+            width: auto;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .logo img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
         }
 
         nav ul {
@@ -229,6 +241,7 @@
             border-radius: 50%;
             margin-bottom: 1rem;
             border: 4px solid var(--light-blue);
+            object-fit: cover;
         }
 
         /* Services Section */
@@ -294,13 +307,24 @@
             background: white;
             border: 2px solid var(--light-blue);
             border-radius: 8px;
-            padding: 2rem;
+            overflow: hidden;
             transition: all 0.3s;
         }
 
         .project-card:hover {
             box-shadow: 0 8px 15px rgba(0,0,0,0.1);
             border-color: var(--cyan);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .project-content {
+            padding: 2rem;
         }
 
         .project-card h3 {
@@ -353,6 +377,7 @@
             border-radius: 50%;
             margin-bottom: 1rem;
             border: 3px solid var(--light-blue);
+            object-fit: cover;
         }
 
         .team-member h3 {
@@ -495,13 +520,15 @@
         <div class="header-top">
             <div class="header-top-content">
                 <span> Kisumu & Nairobi, Kenya</span>
-                <span> ouma.otih@gmail.com | 📱 +254 741 305 673</span>
+                <span>📧 ouma.otih@gmail.com | 📱 +254 741 305 673</span>
             </div>
         </div>
 
         <div class="logo-nav">
             <div class="logo">
-                 The African Geomatics Group
+                <a href="#home" style="display: flex; align-items: center; text-decoration: none;">
+                    <img src="agg-logo.jpg" alt="African Geomatics Group">
+                </a>
             </div>
             <nav>
                 <ul>
@@ -531,22 +558,22 @@
         <h2>Our Core Values</h2>
         <div class="values-grid">
             <div class="value-card">
-                <h3>🤝 Teamwork</h3>
+                <h3> Teamwork</h3>
                 <p>Driven by team spirit and a sense of belonging through the pursuit of collaborations and synergy. We believe that diverse expertise working together delivers superior geospatial solutions.</p>
             </div>
 
             <div class="value-card">
-                <h3>👥 Customer Focus</h3>
+                <h3> Customer Focus</h3>
                 <p>Committed to the effective and efficient delivery of quality and appropriate services and products to all our stakeholders. Your success is our measure of impact.</p>
             </div>
 
             <div class="value-card">
-                <h3>💡 Innovation & Creativity</h3>
+                <h3> Innovation & Creativity</h3>
                 <p>Continuously recovering our operations and adding value to our stakeholders by embracing and pursuing innovative and creative solutions in geomatics and spatial analysis.</p>
             </div>
 
             <div class="value-card">
-                <h3>🤲 Stakeholder Engagement</h3>
+                <h3> Stakeholder Engagement</h3>
                 <p>Proactively and continuously engaging our stakeholders and users for relevance and value proposition. We listen, learn, and adapt to serve better.</p>
             </div>
 
@@ -556,7 +583,7 @@
             </div>
 
             <div class="value-card">
-                <h3> Equity & Inclusiveness</h3>
+                <h3>Equity & Inclusiveness</h3>
                 <p>Committed to accessibility and inclusive representation in our team, projects, and solutions. Spatial intelligence should benefit all communities.</p>
             </div>
         </div>
@@ -585,6 +612,7 @@
             <div class="leadership-profile">
                 <h3>Meet Our Leader</h3>
                 <div style="background: white; padding: 1.5rem; border-radius: 8px;">
+                    <img src="images/leader/joseph-ouma.jpg" alt="Joseph Otieno Ouma">
                     <h4 style="color: var(--light-blue); margin-bottom: 0.5rem;">Joseph Otieno Ouma</h4>
                     <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">Director & Lead Consultant</p>
                     <p style="color: #333; font-size: 0.95rem; line-height: 1.6;">MSc Cartography & GIS | GIS Solution Developer | 7+ years in geospatial intelligence across Africa & Asia</p>
@@ -599,32 +627,32 @@
         <p style="text-align: center; max-width: 1200px; margin: 0 auto 3rem; color: #666;">End-to-end geospatial solutions from data acquisition to decision-ready insights</p>
         <div class="services-grid">
             <div class="service-card">
-                <h3>🛰️ Remote Sensing & Earth Observation</h3>
+                <h3> Remote Sensing & Earth Observation</h3>
                 <p>High-resolution satellite analysis, cadastral survey, change detection, and time-series monitoring using Sentinel, Landsat, and commercial imagery.</p>
             </div>
 
             <div class="service-card">
-                <h3> Land Administration & Cadastre</h3>
+                <h3>Land Administration & Cadastre</h3>
                 <p>Digital land registration, boundary delineation, and tenure security solutions for governments and communities.</p>
             </div>
 
             <div class="service-card">
-                <h3> Urban Planning & Smart Cities</h3>
+                <h3>Urban Planning & Smart Cities</h3>
                 <p>Spatial modeling, infrastructure planning, and sustainable urban development strategies for resilient cities.</p>
             </div>
 
             <div class="service-card">
-                <h3> Environmental & Climate Solutions</h3>
+                <h3>Environmental & Climate Solutions</h3>
                 <p>Deforestation tracking, carbon mapping, flood risk modeling, and climate adaptation planning for environmental stewardship.</p>
             </div>
 
             <div class="service-card">
-                <h3> Custom GIS Development</h3>
+                <h3>Custom GIS Development</h3>
                 <p>Tailored web GIS platforms, automation scripts, and enterprise spatial systems built to your exact requirements.</p>
             </div>
 
             <div class="service-card">
-                <h3> Training & Capacity Building</h3>
+                <h3>Training & Capacity Building</h3>
                 <p>Corporate and institutional training in QGIS, Google Earth Engine, ArcGIS Pro, and GIS programming.</p>
             </div>
         </div>
@@ -636,31 +664,43 @@
         <p style="text-align: center; color: #666; margin-bottom: 3rem;">We deliver measurable impact for leading organizations across Africa and beyond</p>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-tag">Infrastructure</div>
-                <h3>Kisumu Water & Sanitation</h3>
-                <p><strong>Water Distribution Network Mapping</strong></p>
-                <p>Complete GIS-based asset mapping and hydraulic modeling for Kisumu City water supply network upgrade, serving over 500,000 residents.</p>
+                <div class="project-image" style="background-image: url('images/water-distribution.jpg');"></div>
+                <div class="project-content">
+                    <div class="project-tag">Infrastructure</div>
+                    <h3>Kisumu Water & Sanitation</h3>
+                    <p><strong>Water Distribution Network Mapping</strong></p>
+                    <p>Complete GIS-based asset mapping and hydraulic modeling for Kisumu City water supply network upgrade, serving over 500,000 residents.</p>
+                </div>
             </div>
 
             <div class="project-card">
-                <div class="project-tag">Research</div>
-                <h3>Wuhan University</h3>
-                <p><strong>Vegetation Stress Monitoring</strong></p>
-                <p>Joint research on Yala Wetland with vegetation species mapping and multi-year collaboration on S2REP fusion framework for early drought detection.</p>
+                <div class="project-image" style="background-image: url('images/vegetation-stress.jpg');"></div>
+                <div class="project-content">
+                    <div class="project-tag">Research</div>
+                    <h3>Wuhan University</h3>
+                    <p><strong>Vegetation Stress Monitoring</strong></p>
+                    <p>Joint research on Yala Wetland with vegetation species mapping and multi-year collaboration on S2REP fusion framework for early drought detection.</p>
+                </div>
             </div>
 
             <div class="project-card">
-                <div class="project-tag">Urban Planning</div>
-                <h3>Homa Bay County</h3>
-                <p><strong>Land Use Planning & Analysis</strong></p>
-                <p>Comprehensive spatial planning, zoning analysis, carbon footprint extraction, and urban heat mapping using advanced satellite data and machine learning.</p>
+                <div class="project-image" style="background-image: url('images/land-use-planning.jpg');"></div>
+                <div class="project-content">
+                    <div class="project-tag">Urban Planning</div>
+                    <h3>Homa Bay County</h3>
+                    <p><strong>Land Use Planning & Analysis</strong></p>
+                    <p>Comprehensive spatial planning, zoning analysis, carbon footprint extraction, and urban heat mapping using advanced satellite data and machine learning.</p>
+                </div>
             </div>
 
             <div class="project-card">
-                <div class="project-tag">Conservation</div>
-                <h3>Deforestation Monitoring – Homa Hills</h3>
-                <p><strong>Real-time Forest Cover Change Detection</strong></p>
-                <p>Advanced forest cover change detection system using Google Earth Engine for conservation authorities to monitor and respond to deforestation in real-time.</p>
+                <div class="project-image" style="background-image: url('images/deforestation-monitoring.jpg');"></div>
+                <div class="project-content">
+                    <div class="project-tag">Conservation</div>
+                    <h3>Deforestation Monitoring – Homa Hills</h3>
+                    <p><strong>Real-time Forest Cover Change Detection</strong></p>
+                    <p>Advanced forest cover change detection system using Google Earth Engine for conservation authorities to monitor and respond to deforestation in real-time.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -671,21 +711,21 @@
         <p style="text-align: center; color: #666; margin-bottom: 3rem;">Building Africa's leading geospatial intelligence team</p>
         <div class="team-grid">
             <div class="team-member">
-                <div style="width: 120px; height: 120px; border-radius: 50%; background: var(--light-blue); margin: 0 auto 1rem; border: 3px solid var(--light-blue); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">👨‍💼</div>
+                <img src="images/joseph-ouma.jpg" alt="Joseph Otieno Ouma">
                 <h3>Joseph Otieno Ouma</h3>
                 <p style="color: var(--light-blue); font-weight: bold;">Director & Lead Consultant</p>
                 <p style="font-size: 0.9rem; color: #666;">MSc Cartography & GIS | 7+ years expertise</p>
             </div>
 
             <div class="team-member">
-                <div style="width: 120px; height: 120px; border-radius: 50%; background: var(--cyan); margin: 0 auto 1rem; border: 3px solid var(--cyan); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">👩‍💻</div>
+                <img src="images/team-member-2.jpg" alt="Remote Sensing Specialist">
                 <h3>Joining Soon</h3>
                 <p style="color: var(--cyan); font-weight: bold;">Remote Sensing Specialist</p>
                 <p style="font-size: 0.9rem; color: #666;">Earth Observation Expert</p>
             </div>
 
             <div class="team-member">
-                <div style="width: 120px; height: 120px; border-radius: 50%; background: var(--light-blue); margin: 0 auto 1rem; border: 3px solid var(--light-blue); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">👨‍💻</div>
+                <img src="images/team-member-3.jpg" alt="Web GIS Developer">
                 <h3>Joining Soon</h3>
                 <p style="color: var(--light-blue); font-weight: bold;">Web GIS Developer</p>
                 <p style="font-size: 0.9rem; color: #666;">Mapping Platform Expert</p>
@@ -775,9 +815,12 @@
 
     <!-- Footer -->
     <footer>
+        <div style="margin-bottom: 1.5rem;">
+            <img src="agg-logo.jpg" alt="African Geomatics Group" style="max-width: 180px; width: 100%; height: auto;">
+        </div>
         <p>&copy; 2025 The African Geomatics Group. All rights reserved.</p>
         <p>Transforming Africa's Future Through Spatial Intelligence 🌍</p>
-        <p style="margin-top: 1rem; font-size: 0.9rem;"> Committed to Sustainable Development |  Data-Driven Solutions |  Community-Focused Impact</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Committed to Sustainable Development | Data-Driven Solutions | Community-Focused Impact</p>
     </footer>
 
     <script>
